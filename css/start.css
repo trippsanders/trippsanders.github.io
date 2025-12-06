@@ -1,0 +1,65 @@
+/* body text style*/
+body {
+   color: white;
+}
+
+
+/*nav styles */
+nav {
+   font-size: 3rem;
+   border-bottom: solid;
+   color: rgb(43,43,43);
+}
+nav p {
+   margin-top: 5%;
+   margin-bottom: 5%;
+}
+
+
+/*img and text styles*/
+p {
+   margin: 2.5%;
+   display: inline;
+}
+p.ch_num {
+   float: left;
+}
+p.ch_names {
+   float: inline-start;
+   margin-left: 20%;
+}
+a:hover, a:active {
+   color: yellow;
+}
+a {
+   color:white;
+   text-decoration: none;
+}
+img.icons {
+   float: right;
+   width: 12%;
+   margin-right: 2%;
+   margin-top: 1.5%;
+   margin-bottom: 3%;
+}
+
+
+/* grid stuff */
+body {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas: "header header"
+                        "nav1 nav1"
+                        "nav2 nav2"
+                        "nav3 nav3"  
+                        "nav4 nav4"                                              
+                        "footer footer";
+   column-gap: 40px;
+   row-gap: 20px;
+}
+header {grid-area: header;}
+footer {grid-area: footer;}
+nav#nav1 {grid-area: nav1;}
+nav#nav2 {grid-area: nav2}
+nav#nav3 {grid-area: nav3}
+nav#nav4 {grid-area: nav4}

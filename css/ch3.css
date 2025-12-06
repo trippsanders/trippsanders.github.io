@@ -1,0 +1,41 @@
+/* body text styles*/
+body {
+   color: black;
+   word-spacing: -0.18rem;
+   font-size: larger;
+}
+
+
+/*img and text styles*/
+img {
+   width: 125%;
+}
+section#S1 p {
+   margin: 2.5%;
+   float: none;
+}
+
+
+/* div style */
+div {
+   display: flex;
+}
+
+
+/* grid stuff */
+body {
+   display: grid;
+   grid-template-columns: 0.25fr 1fr 1fr;
+   grid-template-areas: "header header header"
+                        "navbar section1 section1"
+                        "section2 section2 section2"
+                        "footer footer footer";
+   column-gap: 10px;
+   row-gap: 10px;
+}
+header {grid-area: header;}
+section#navbar {grid-area: navbar;}
+section#S1 {grid-area: section1;}
+section#S2 {grid-area: section2}
+aside {grid-area: aside;}
+footer {grid-area: footer;}
